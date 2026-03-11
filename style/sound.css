@@ -4,6 +4,7 @@
 
 
 body{
+    background: rgb(161, 100, 223)
     height: 100vh;
     display: flex;
     align-items: center;
@@ -11,8 +12,18 @@ body{
     margin: 0;
 }
 
-.buttons {
-    height: 50px;
-    width: 50px;
-    background: green;
+.btn
+{
+    background: mediumpurple;
+    color: white;
+    margin: 1rem;
+    padding: 1.5rem 3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.btn:hover {
+    opacity: 0.9;
 }
