@@ -1,6 +1,26 @@
 buttons = document.querySelector('.buttons')
+applause = document.querySelector('.applause')
+boo= document.querySelector('.boo')
 
 btn = document.createElement('button')
-btn.innerText= "Click Me"
-btn.classlist.add
+btn.innerText= "applause"
+btn.classList.add('btn')
+btn.addEventListener('click', () => {
+    applause.play()
+
+})
 buttons.appendChild(btn)
+
+
+btn = document.createElement('button')
+btn.innerText= "boo"
+btn.classList.add('btn')
+btn.addEventListener('click', ()=> {
+    applause.play()
+
+})
+buttons.appendChild(btn)
+
+
+
+
