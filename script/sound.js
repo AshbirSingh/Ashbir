@@ -1,6 +1,8 @@
+
+
 buttons = document.querySelector('.buttons')
 
-sounds= {'applause','boo','gasp','tada','vicotry','wrong'}
+sounds = ['applause','boo','gasp','tada','vicotry','wrong']
 
 
 for(let i=0; i < 6; i= i+1){
