@@ -6,7 +6,8 @@
 }
 
 body{
-    background: rgb(161, 100, 223)
+    font-family: "Roboto", sans-serif;
+    background: rgb(161, 100, 223);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,6 +17,7 @@ body{
 
 .btn
 {
+    font-family: "Roboto", sans-serif;
     background: mediumpurple;
     color: white;
     margin: 1rem;
