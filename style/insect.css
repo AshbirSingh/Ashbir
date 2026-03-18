@@ -58,7 +58,13 @@ h1{
 }
 
 .choose-insect-btn {
-    background: transparent; 
+    background: transparent;
+}
+
+.choose-insect-btn:hover{
+    background: #ffffff;
+    color: #516dff;
+
 }
 
 .choose-insect-btn img {
