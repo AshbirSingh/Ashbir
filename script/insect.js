@@ -11,6 +11,9 @@ for (let i = 0; i < choose_insect_btns.length; i = i + 1)
 {
     choose)insect_btnsp[i].addEventListener('click', () => {
         screens[1].classList.add('up')
-        img = choose_insect_btns[1].querySelector
+        img = choose_insect_btns[1].querySelector('img')
+        src = img.getAttribute('src')
+        alt = img.getAttribute('alt')
+        console.log(src)
     })
 }
