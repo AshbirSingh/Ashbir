@@ -23,4 +23,9 @@ body {
 
 }
 
-.screen.up
+.choose-insect-btn img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    
+}
