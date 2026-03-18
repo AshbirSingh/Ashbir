@@ -33,6 +33,7 @@ h1{
     color: #5160ff;
     padding: 15px 20px;
     cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
 }
 
 .btn:hover{
