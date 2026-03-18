@@ -1,3 +1,4 @@
 screens = document.querySelectorALL('.screen')
+choose_insect_btns = document.querySelectorALL('.choose-insect-btn')
 
-screens[2]
+choose_insect_btns[0]
