@@ -20,12 +20,26 @@ body {
     justify-content: center;
     flex-direction: column;
 
+}
+h1{
+    line-height: 1.4;
+}
 
+.btn {
+    border: 0;
+    background: #ffffff;
+    color: #5160ff;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    
 }
 
 .choose-insect-btn img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-    
+
 }
