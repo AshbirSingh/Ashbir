@@ -25,5 +25,7 @@ function startGame() {
 
 
 function createInsect() {
-    
+    insect = document.createElement('div')
+    insect.innerHTML
+
 }
