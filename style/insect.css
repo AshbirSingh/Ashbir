@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
+      font-family: "Press Start 2P", system-ui;
     background: #516dff;
     color: #ffffff;
     height: 100vh;
@@ -34,7 +36,7 @@ h1{
 }
 
 .btn:hover{
-    
+
 }
 
 .choose-insect-btn img {
