@@ -74,6 +74,12 @@ h1{
 
 }
 
+.choost-insect-btn:active {
+    background: #ffffff;
+    opacity: 0.7;
+    
+}
+
 .choose-insect-btn img {
     width: 100px;
     height: 100px;
