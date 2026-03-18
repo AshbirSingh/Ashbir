@@ -118,3 +118,8 @@ h1{
 .message.visible {
     opacity: 1;
 }
+
+.insect {
+    width: 100px;
+    height: 100px;
+}

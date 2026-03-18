@@ -27,6 +27,9 @@ function startGame() {
 
 function createInsect() {
     insect = document.createElement('div')
+    insect.classList.add('insect')
+    insect.innerHtml = 
     insect.innerHTML = "<img src= "images/roachng.png" alt="roach"
+
 
 }
