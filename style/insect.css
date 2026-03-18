@@ -21,8 +21,12 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
+.screen.up{
+    margin-top: -100vh;
+}
+
+
 h1{
     line-height: 1.4;
 }
