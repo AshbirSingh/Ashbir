@@ -64,6 +64,13 @@ h1{
 .choose-insect-btn:hover{
     background: #ffffff;
     color: #516dff;
+    color: #ffffff
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    width: 150px;
+    height: 150px;
+
 
 }
 
