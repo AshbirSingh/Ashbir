@@ -6,3 +6,10 @@ start_btn = document.getElementById('start-btn')
 start_btn.addEventListener('click', () => {
     screens[0]. classlist.add('up')
 })
+
+for (let i = 0; i < choose_insect_btns.length; i = i + 1)
+{
+    choose)insect_btnsp[i].addEventListener('click', () => {
+        screens[1].classList.add('up')
+    })
+}
