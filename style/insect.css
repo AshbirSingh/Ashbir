@@ -1,18 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
+
 body {
-      font-family: "Press Start 2P", system-ui;
-    background: #516dff;
+    font-family: "Press Start 2P", system-ui;
+    background: purple;
     color: #ffffff;
     height: 100vh;
     overflow: hidden;
     margin: 0;
     text-align: center;
-
 }
+
+
+.screen.up {
+    margin-top: -100vh;
+}
+
+
+h1 {
+    line-height: 1.4;
+}
+
+
+.btn {
+    font-family: "Press Start 2P", system-ui;
+    border: 0;
+    background: #ffffff;
+    color: #471596;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    opacity: 0.9;
+}
+
 
 .screen {
     height: 100vh;
@@ -21,29 +49,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-.screen.up{
-    margin-top: -100vh;
+    transition: margin 0.5s ease-out;
 }
 
 
-h1{
-    line-height: 1.4;
-}
-
-.btn {
-    border: 0;
-    background: #ffffff;
-    color: #5160ff;
-    padding: 15px 20px;
-    cursor: pointer;
-    font-family: "Press Start 2P", system-ui;
-}
-
-.btn:hover{
-    opacity: 0.9;
-
-}
 .insects-list {
     display: flex;
     flex-wrap: wrap;
@@ -51,45 +60,50 @@ h1{
     list-style-type: none;
     padding: 0px;
 }
-
-.insects-list li{
+.insects-list li {
     margin: 10px;
-
 }
+
 
 .choose-insect-btn {
     background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    font-family: "Press Start 2p", system-ui;
+    width: 150px;
+    height: 150px;
 }
 
-.choose-insect-btn:hover{
+
+.choose-insect-btn:hover {
     background: #ffffff;
     color: #516dff;
-    color: #ffffff;
     border: 2px solid #ffffff;
     cursor: pointer;
     font-family: "Press Start 2P", system-ui;
     width: 150px;
     height: 150px;
-
-
 }
 
-.choost-insect-btn:active {
+
+.choose-insect-btn:active {
     background: #ffffff;
     opacity: 0.7;
-
 }
+
 
 .choose-insect-btn img {
     width: 100px;
     height: 100px;
     object-fit: contain;
-
 }
+
 
 .game-container {
     position: relative;
 }
+
 
 .time {
     position: absolute;
@@ -98,12 +112,12 @@ h1{
 }
 
 
-.score{
+.score {
     position: absolute;
     top: 20px;
     right: 20px;
-
 }
+
 
 .message {
     line-height: 1.7;
@@ -113,11 +127,15 @@ h1{
     z-index: 100;
     text-align: center;
     opacity: 0;
+    transform: scale(0);
 }
+
 
 .message.visible {
     opacity: 1;
+    transform: scale(1);
 }
+
 
 .insect {
     width: 100px;
@@ -129,12 +147,15 @@ h1{
     position: absolute;
 }
 
-.insect.caught{
+
+.insect.caught {
     transform: scale(0);
-
-
 }
+
+
 .insect img {
     width: 100px;
     height: 100px;
 }
+
+
