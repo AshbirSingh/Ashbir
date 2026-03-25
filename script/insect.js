@@ -10,7 +10,7 @@ start_btn.addEventListener('click', () => {
 
 for (let i = 0; i < choose_insect_btns.length; i = i + 1)
 {
-    choose)insect_btnsp[i].addEventListener('click', () => {
+    choose.insect_btnsp[i].addEventListener('click', () => {
         screens[1].classList.add('up')
         img = choose_insect_btns[1].querySelector('img')
         src = img.getAttribute('src')
@@ -29,10 +29,10 @@ function createInsect() {
     console.log("hello")
     insenct = document.createElement('div')
     insect.classList.add('insect')
-    {x,y}= getRandomLocation()
+    {x,y} getRandomLocation()
     insect.style.top = '$(y)px'
     insect.style.left = '$(x)px'
-    insect.inner.HTML = '<img src="${src}" alt="${src}" style= "transform: rotate(${Math.random()*})
+    insect.inner.HTML = 'img src="${src}" alt="${src}" style= "transform: rotate(${Math.random()*})'
     game_container.appendChild(insect)
 
 
