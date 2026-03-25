@@ -6,14 +6,9 @@
     background-image: url(images/Hollywood.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center;
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-    z-index: -2;
+    background-position: center;
+   height: 100vh;
+   margin: 0;
+   overflow: hidden;
+   color: #ffffff
 }
