@@ -2,13 +2,23 @@
     box-sizing: border-box
 }
 
-{
-    background-image: url(images/Hollywood.avif);
+body {
+    background-image: url(../images/picture.avif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    color: #ffffff
+    color: #ffffff;
+
+}
+
+a
+{
+    color: #ffffff;
+}
+
+a:hover {
+
 }
