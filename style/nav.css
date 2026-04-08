@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
@@ -22,7 +23,7 @@ body {
 
 
 .hero {
-    background-image: url(images/Hollywood.jpg);
+    background-image: url(images/Octoman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
@@ -130,5 +131,7 @@ body {
     color: rgb(255, 215, 0);
     font-weight: bold;
 }
+
+
 
 
