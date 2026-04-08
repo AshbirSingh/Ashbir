@@ -16,6 +16,11 @@ body {
     margin: 0;
 }
 
+.text {
+    color: #ffffff
+    
+}
+
 .container {
     display: flex;
     align-items: center;

@@ -9,4 +9,5 @@ breathAnimation()
 
 function breathAnimation() {
     text.innterText = 'Breath In!'
+    container.class
 }
