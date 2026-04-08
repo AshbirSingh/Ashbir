@@ -17,8 +17,9 @@ body {
 }
 
 .text {
-    color: #ffffff
-    
+    color: #ffffff;
+    z-index: 100;
+    font-sizeL 24px
 }
 
 .container {
