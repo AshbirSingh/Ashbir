@@ -15,3 +15,5 @@ function breathAnimation() {
         text.innerText = 'Hold';
     }, breatheTime)
 }
+
+setInterval(breathAnimation, 1000)
