@@ -1,4 +1,5 @@
 const ball = document.createElement('div')
+const LPadel = document.createElement('div')
 const ballRadius = 30
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
@@ -11,7 +12,7 @@ setInterval(moveBall, 10)
 
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
-    ballYPosition = ballYposition + ballSpeed * ballYDirection
+    ballYPosition = ballYPosition + ballSpeed * ballYDirection
     ball.style.left = `${ballXPosition}px`
     ball.style.top = `${ballYPosition}px`
     if (ballYPosition < 0 || ballYPosition > windowWidth - 2 * ballRadius){
