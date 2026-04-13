@@ -44,3 +44,12 @@ function createBall(){
     ball.style.left = `${ballXPosition}px`
 
 }
+
+function create LPadel() {
+    LPadel.style.height = `${LPadelHeight}px`
+    LPadel.style.width = `${LpadelWidth}px`
+    LPadel.style.backgroundColor = 'blue'
+    LPadel.style.position = 'absolute'
+    LPadel.style.left = "50px"
+    LPadel.style.height = ``
+}
