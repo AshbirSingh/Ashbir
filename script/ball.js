@@ -10,7 +10,9 @@ setInterval(moveBall, 10)
 function moveBall(){
     ballXPosition = ballXPosition + ballSpeed
     ball.style.left = `${ballXPosition}px`
-    if (ballXPosition)
+    if (ballXPosition > windowWidth) {
+        
+    }
 }
 
 
