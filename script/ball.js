@@ -4,6 +4,7 @@ const LPadel = document.createElement('div')
 document.body.appendChild(LPadel)
 let LPadelWidth = 20
 let LPadelHeigth = 100
+let LPadelSpeed = 5
 
 const ballRadius = 30
 const windowHeight = window.innerHeight
@@ -53,3 +54,12 @@ function create LPadel() {
     LPadel.style.left = "50px"
     LPadel.style.height = `${windowHeight / 2 - LPadelHeight / 2}px`
 }
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        //move up
+    }
+    if (event.key == 's') {
+        //move down
+    }
+})
