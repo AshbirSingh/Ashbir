@@ -11,7 +11,7 @@ function createBall(){
     ball.style.borderRadius = "50%"
     ball.style.backgroundColor = "green"
     ball.style.position = "absolute"
-    ball.style.top = "30px"
-    ball.style.left = "30px"
+    ball.style.top = `${windowHeihgt/2}px`
+    ball.style.left = `${windowWidth/2}px`
 
 }
