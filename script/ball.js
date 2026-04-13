@@ -58,13 +58,13 @@ function createLPadel() {
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
-        if (LPadelYPosition < 0) {
-            LPadelYPosition = -
+        if (LPadelYPosition <= 0) {
+            LPadelYPosition = 0
         }
         else {
-
+            LPadepYPosition = LPadelYPosition - LPadelSpeed
         }
-        LPadelYPosition = LPadelYPosition - LPadelSpeed
+       
 
     }
     if (event.key == 's') {
@@ -72,7 +72,7 @@ document.addEventListener('keyup', (event) => {
             LpadelYPosition = LPadelYPosition + LPadelSpeed
         }
         else {
-            
+
         }
         LPadelYPosition = LPadelYPosition + LPadelSpeed
     }
