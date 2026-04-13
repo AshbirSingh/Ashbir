@@ -62,7 +62,7 @@ document.addEventListener('keyup', (event) => {
             LPadelYPosition = 0
         }
         else {
-            LPadepYPosition = LPadelYPosition - LPadelSpeed
+            LPadelYPosition = LPadelYPosition - LPadelSpeed
         }
 
 
@@ -72,9 +72,9 @@ document.addEventListener('keyup', (event) => {
             LpadelYPosition = windowHeight - LPadelHeight
         }
         else {
-
+            LPadelYPosition = LPadelYPostion + LPadelSpeed
         }
-        LPadelYPosition = LPadelYPosition + LPadelSpeed
+
     }
     LPadel.style.top = `${LPadelYPosition}px`
 })
