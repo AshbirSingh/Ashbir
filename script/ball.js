@@ -53,7 +53,7 @@ function createLPadel() {
     LPadel.style.backgroundColor = 'blue'
     LPadel.style.position = 'absolute'
     LPadel.style.left = "50px"
-    LPadel.style.height = `${windowHeight / 2 - LPadelHeight / 2}px`
+    LPadel.style.top = `${LPadelYPosition}px`
 }
 
 document.addEventListener('keyup', (event) => {
