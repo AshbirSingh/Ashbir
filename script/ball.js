@@ -18,7 +18,7 @@ function moveBall(){
         ballYDirection = ballYDirection * -1
 
     }
-    if(ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRaidus){
+    if(ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius){
         ballXDirection = ballXDirection * -1
     }
 }
