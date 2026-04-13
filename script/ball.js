@@ -64,12 +64,12 @@ document.addEventListener('keyup', (event) => {
         else {
             LPadepYPosition = LPadelYPosition - LPadelSpeed
         }
-       
+
 
     }
     if (event.key == 's') {
-        if (LPadelYPosition >= windowHeight - LPadelHeight) {
-            LpadelYPosition = LPadelYPosition + LPadelSpeed
+        if (LPadelYPosition >= windowHeight - LPadelHeight){
+            LpadelYPosition = windowHeight - LPadelHeight
         }
         else {
 
