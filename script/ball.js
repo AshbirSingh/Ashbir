@@ -14,11 +14,11 @@ function moveBall(){
     ballYPosition = ballYposition + ballSpeed * ballYDirection
     ball.style.left = `${ballXPosition}px`
     ball.style.top = `${ballYPosition}px`
-    if (ballXPosition < 0 || ballYPosition > windowWidth - 2 * ballRadius){
+    if (ballYPosition < 0 || ballYPosition > windowWidth - 2 * ballRadius){
         ballYDirection = ballYDirection * -1
 
     }
-    if(ballYPosition < 0 || ballXPosition > windowWidth - 2 * ballRaidus){
+    if(ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRaidus){
         ballXDirection = ballXDirection * -1
     }
 }
