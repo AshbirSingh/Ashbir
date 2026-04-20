@@ -1,120 +1,178 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
+
 
 body {
-    background: #224941;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+   background: #224941;
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   min-height: 100vh;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0;
 }
+
 
 .text {
-    color: #ffffff;
-    z-index: 100;
-    font-size 24px;
+   color: white;
+   z-index: 100;
+   font-size: 24px;
 }
+
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    height: 300px;
-    width: 300px;
-    position: relative;
-    transform: scale(1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   height: 300px;
+   width: 300px;
+   position: relative;
+   /*transform: scale(1);*/
 }
+
 
 .circle {
-    background: #010f1c;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
+   background: #010f1c;
+   height: 100%;
+   width: 100%;
+   border-radius: 50%;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   z-index: -1;
 }
+
 
 .gradient-circle {
-    background: conic-gradient(
-        #55b7a4 0%,
-        #4ca493 40%,
-        #ffffff 40%,
-        #ffffff 60%,
-        #336d62 60%,
-        #2a5b52 100%
-    );
-    height: 320px;
-    width: 320px;
-    z-indx: -2;
-    border-radius: 50%;
-    postion: absolute;
-    top: -10px;
-    left: -10px;
+   background: conic-gradient(
+       #55b7a4 0%,
+       #4ca493 40%,
+       #ffffff 40%,
+       #ffffff 60%,
+       #336d62 60%,
+       #2a5b52 100%
+
+
+   );
+   height: 320px;
+   width: 320px;
+   z-index: -2;
+   border-radius: 50%;
+   position: absolute;
+   top: -10px;
+   left: -10px;
 }
+
 
 .pointer {
-    background: #ffffff;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    display: block;
-    z-index
+   background: #ffffff;
+   border-radius: 50%;
+   height: 20px;
+   width: 20px;
+   display: block;
 }
+
 
 .pointer-container {
-    position: absolute;
-    top: -40px;
-    left: 140px;
-    width: 20px;
-    height: 190px;
-    transform-orgin: bottom center;
-    animation: rotate 7.5s linear forwards infinite;
-
+   position: absolute;
+   top: -40px;
+   left: 140px;
+   width: 20px;
+   height: 190px;
+   transform-origin: bottom center;
+   animation: rotate 7.5s linear infinite;
 }
+
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+   from {
+       transform: rotate(0deg);
+   }
+   to {
+       transform:rotate(360deg);
+   }
 }
+
 
 @keyframes grow {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
-
+   from {
+       transform: scale(1);
+   }
+   to {
+       transform: scale(1.2);
+   }
 }
+
 
 .container.grow {
-    animation: grow 3s linear forward;
+   animation: grow 3s ease-in-out forwards;
+}
+@keyframes shrink {
+   from {
+       transform: scale(1.2);
+   }
+   to {
+       transform: scale(1);
+   }
 }
 
-
-@keyframs shrink {
-    from {
-        transform: scale(1.2);
-    }
-    to {
-        transform: scale(1);
-    }
-}
 
 .container.shrink {
-    animation: shrink 3s linear forwards;
+   animation: shrink 3s ease-in-out forwards;
 }
+
+
+
+
+
+
+Js const container = document.getElementById('container')
+const text = document.getElementById('text')
+
+
+const totalTime = 7500
+const breathTime = (totalTime / 5) * 2
+const holdTime = totalTime / 5
+
+
+breathAnimation()
+
+
+function breathAnimation() {
+   text.innerText = 'Breathe In!'
+
+
+   container.classList.remove('shrink')
+   container.classList.remove('grow')
+   void container.offsetWidth
+   container.classList.add('grow')
+
+
+   setTimeout(() => {
+       text.innerText = 'Hold'
+
+
+       setTimeout(() => {
+           text.innerText = 'Breathe Out!'
+
+
+           container.classList.remove('grow')
+           container.classList.remove('shrink')
+           void container.offsetWidth
+           container.classList.add('shrink')
+
+
+       }, holdTime)
+
+
+   }, breathTime)
+}
+
+
+setInterval(breathAnimation, totalTime)
